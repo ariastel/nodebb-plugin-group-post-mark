@@ -1,0 +1,21 @@
+{
+	"id": "nodebb-plugin-group-post-mark",
+	"name": "NodeBB Group Post Mark Plugin",
+	"description": "NodeBB Plugin that appends a mark to the topic that contains posts from a user of a specific group",
+	"url": "https://github.com/ariastel/nodebb-plugin-group-post-mark",
+	"main": "./plugin/index.js",
+	"hooks": [
+		{ "hook": "static:app.load", "method": "hooks.statics.load" },
+		{ "hook": "filter:admin.header.build", "method": "hooks.filters.adminHeaderBuild" },
+		{ "hook": "action:settings.set", "method": "hooks.actions.settingsSet" },
+		{ "hook": "filter:topic.getFields", "method": "hooks.filters.topicGetFields" }
+	],
+	"templates": "templates",
+	"languages": "languages",
+	"less": [
+		"less/style.less"
+	],
+	"acpScripts": [
+		"client/admin.js"
+	]
+}

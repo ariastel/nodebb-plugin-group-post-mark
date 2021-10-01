@@ -1,0 +1,42 @@
+{
+  "name": "@ariastel/nodebb-plugin-group-post-mark",
+  "version": "0.0.1",
+  "description": "NodeBB Plugin that appends a mark to the topic that contains posts from a user of a specific group",
+  "main": "./plugin/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariastel/nodebb-plugin-group-post-mark.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/ariastel/nodebb-plugin-group-post-mark#readme",
+  "keywords": [
+    "nodebb",
+    "plugin"
+  ],
+  "author": {
+    "name": "Antosik",
+    "email": "grig_anton96@mail.ru"
+  },
+  "contributors": [
+    "Ariastel Team <ariastel@iamantosik.me> (https://github.com/ariastel)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ariastel/nodebb-plugin-group-post-mark/issues"
+  },
+  "nbbpm": {
+    "compatibility": "^1.18.x"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-nodebb": "^0.0.2",
+    "eslint-plugin-import": "^2.24.2"
+  }
+}

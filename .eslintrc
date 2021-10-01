@@ -1,0 +1,9 @@
+{
+    "extends": "nodebb",
+    "rules": {
+        "no-continue":"warn"
+    },
+    "parserOptions": {
+        "ecmaVersion": 12
+    }
+}
